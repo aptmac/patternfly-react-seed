@@ -6,6 +6,7 @@ import { GeneralSettings } from '@app/Settings/General/GeneralSettings';
 import { ProfileSettings } from '@app/Settings/Profile/ProfileSettings';
 import { NotFound } from '@app/NotFound/NotFound';
 import { useDocumentTitle } from '@app/utils/useDocumentTitle';
+import InventoryPage from './InventoryPage/InventoryPage';
 
 let routeFocusTimer: number;
 export interface IAppRoute {
@@ -28,11 +29,11 @@ export type AppRouteConfig = IAppRoute | IAppRouteGroup;
 
 const routes: AppRouteConfig[] = [
   {
-    component: Dashboard,
+    component: InventoryPage,
     exact: true,
-    label: 'Dashboard',
+    label: 'InventoryPage',
     path: '/',
-    title: 'PatternFly Seed | Main Dashboard',
+    title: 'PatternFly Seed | Inventory Page',
   },
   {
     component: Support,
